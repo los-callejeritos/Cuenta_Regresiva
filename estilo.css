@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(C:\Users\ronys\Downloads/Roboto-Medium.ttf);
+}
+
+*{
+    background: #F1F5F8;
+}
+
+.contenido h3{
+    font-family: Roboto-Medium;
+}
+.imagen img{
+    margin-bottom: 2rem;
+    width: 43.5%;
+    margin-top: 70.5px;
+    margin-left: 90px;
+
+}
+.informacion h3{
+    font-family: var(--ff-secondary);
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: #2E88C4;
+    font-family: r;
+}
+.informacion h4{
+    color: #102A42;
+}
+body{
+    font-family: var(--ff-secondary);
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
