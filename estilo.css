@@ -1,36 +1,58 @@
-@font-face {
-    font-family: Roboto-Medium;
-    src: url(C:\Users\ronys\Downloads/Roboto-Medium.ttf);
-}
-
-*{
+body{
     background: #F1F5F8;
 }
-
-.contenido h3{
-    font-family: Roboto-Medium;
+.contenido{
+    display: flex;
 }
-.imagen img{
-    margin-bottom: 2rem;
-    width: 43.5%;
-    margin-top: 70.5px;
-    margin-left: 90px;
-
+img{
+    width: 618px;
+    height: 393px;
+    margin-top: 75px;
+    margin-left: 35px;
 }
-.informacion h3{
-    font-family: var(--ff-secondary);
-    font-size: 1.25rem;
-    text-transform: capitalize;
-    color: #2E88C4;
-    font-family: r;
+.informacion{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
 }
-.informacion h4{
-    color: #102A42;
+h3{
+    color: #1A6AA2;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
 }
-body{
-    font-family: var(--ff-secondary);
-    background: var(--clr-grey-10);
-    color: var(--clr-grey-1);
-    line-height: 1.5;
-    font-size: 0.875rem;
+.Navidad{
+    margin-top: -20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    color: #829AB0;
+    font-size: 16.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+/* /aqui ponemos los cuadritos en una fila/ */
+.contador{
+    display: flex;
+    flex-direction: row;
+}
+/* /Aqui modificamos los cuadritos del contador/ */
+.formato{
+    background: #102A42;
+    color: white;
+    font-size: 20px;
+    margin-right: 16px;
+    margin-top: 13px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+.formato h4{
+    font-size: 40px;
+    margin: auto;
+}
+.formato span{
+    font-size: 20px;
 }
