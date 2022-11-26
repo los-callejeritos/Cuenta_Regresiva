@@ -1,63 +1,90 @@
-const meses = [ 
-    "Enero",
-    "Febrero",
-    "Marzo",
-    "Abril",
-    "Mayo",
-    "Junio",
-    "Julio",
-    "Agosto",
-    "Setiembre",
-    "Octubre",
-    "Noviembre",
-    "Diciembre",
+const meses = [
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Setiembre",
+  "Octubre",
+  "Noviembre",
+  "Deciembre",
 ];
-const semanas = [ 
-    "Lunes",
-    "Martes",
-    "Miercoles",
-    "Jueves",
-    "Sabado",
-    "Domingo",
+const semanas = [
+  "Domingo",
+  "Lunes",
+  "Martes",
+  "Miercoles",
+  "Jueves",
+  "Viernes",
+  "Sábado",
 ];
-
-const sub_navidad = document.querySelector(".Navidad");
+const Navidad = document.querySelector(".Navidad");
 const contador = document.querySelector(".contador");
-const formato = document.querySelectorAll(".contador h4");
+const formato = document.querySelectorAll(".formato h4");
 
-let fechafinal = new Date(2022, 12, 25, 0, 0, 0);
-console.log(fechafinal);
+// months are ZERO index based;
 
-const año = fechafinal.getFullYear();
-const horas = fechafinal.getHours();
-const minutos = fechafinal.getMinutes();
+let temporal = new Date();
+let tempAño = temporal.getFullYear();
+let tempMes = temporal.getMonth();
+let tempDia = temporal.getDate();
 
-let mes = fechafinal.getMonth();
-mes = meses [mes];
-const fecha = fechafinal.getDate();
+//Aqui podemos hacer las modificaciones para establecer
+//la fecha en la se culminara la cuenta regresiva
+const fechaFinal = new Date(tempAño, tempMes, tempDia + 30, 0, 0, 0);
 
-const semana = semanas[fechafinal.getDay()];
+const año = fechaFinal.getFullYear();
+const horas = fechaFinal.getHours();
+const minutos = fechaFinal.getMinutes();
+let mes = fechaFinal.getMonth();
 
-sub_navidad.textContent = `Ya esta cerca la Navidad solo faltan ${semanas}, ${fecha} ${mes} ${año} ${horas}:${minutos}am`;
+mes = meses[mes];
+const semana = semanas[fechaFinal.getDay()];
+const fecha = fechaFinal.getDate();
+Navidad.textContent = `La Cuenta Regresiva Termina El ${semana}, ${fecha} ${mes} ${año} ${horas}:${minutos} am`;
 
+const tiempoFinal = fechaFinal.getTime();
+function getRemaindingTime() {
+  const Hoy = new Date().getTime();
 
-const tiempofinal = fechafinal.getTime();
-console.log(tiempofinal)
+  const t = tiempoFinal - Hoy;
+  // 1s = 1000ms
+  // 1m = 60s
+  // 1hr = 60m
+  // 1d = 24hr
+  // valores en milisegundos
+  const unDia = 24 * 60 * 60 * 1000;
+  const unaHora = 60 * 60 * 1000;
+  const unMinuto = 60 * 1000;
+  // calcular todos los valores
+  let dias = t / unDia;
+  dias = Math.floor(dias);
+  let horas = Math.floor((t % unDia) / unaHora);
+  let minutos = Math.floor((t % unaHora) / unMinuto);
+  let segundos = Math.floor((t % unMinuto) / 1000);
 
-function getRemainingTime() {
-    const hoy = new Date().getTime();
-    const t = tiempofinal - hoy;
-    console.log(t);
+  // set values array
+  const valores = [dias, horas, minutos, segundos];
+  function format(item) {
+    if (item < 10) {
+      return (item = `0${item}`);
+    }
+    return item;
+  }
+
+  formato.forEach(function (item, index) {
+    item.innerHTML = format(valores[index]);
+  });
+
+  if (t < 0) {
+    clearInterval(contadora);
+    contador.innerHTML = `<h4 class="expiró">Felicidades, ya es Navidad</h4>`;
+  }
 }
-
-//Equivalencias del tiempo
-const un_dia = 24 * 60 * 60 * 1000;
-const una_hora = 60 * 60* 1000;
-const un_minuto = 60 * 1000;
-
-//teniendo en cuenta ello los valores serian los siguientes
-let dias = t / un_dia;
-dias = Math.floor(dias);
-let hora = t / una_hora;
-//falta terminar 
-getRemainingTime()
+// cuenta regresiva;
+let contadora = setInterval(getRemaindingTime, 1000);
+//establecer valores iniciales
+getRemaindingTime();
