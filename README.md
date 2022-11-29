@@ -14,4 +14,7 @@ Javascript.js
 En el archivo js, se realizó las programaciones que el trabajo requeria, en este caso, era un contador regresivo estableciendo como fecha límite la celebración del día de la Navidad.
 Obstáculos:
 En el caso de Rony se le dificultó muchísimo lograr colocar los diferentes fuentes de letra que el trabajo requería.
-También tuvo dificultad para trabajar con el diseño de los estilos, por su bajo conocimiento en css
+También tuvo dificultad para trabajar con el diseño de los estilos, por su bajo conocimiento en css...
+Ada no tuvo dificultades.
+Este es el link hacia la visualización del [Countdown] (blank:#http://127.0.0.1:5500/index.html)
+<!-- Bueno con esto hemos concluído con el trabajo. -->
