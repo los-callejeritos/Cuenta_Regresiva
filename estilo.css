@@ -1,0 +1,59 @@
+/*Aqui empezaremos dandole estilo a nuestra pagina*/
+body{
+    background: #F1F5F8;
+}
+.contenido{
+    display: flex;
+}
+img{
+    width: 618px;
+    height: 393px;
+    margin-top: 75px;
+    margin-left: 35px;
+}
+.informacion{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+}
+h3{
+    color: #1A6AA2;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+.Navidad{
+    margin-top: -20px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+p{
+    color: #829AB0;
+    font-size: 16.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+/*aqui ponemos los cuadritos en una fila*/
+.contador{
+    display: flex;
+    flex-direction: row;
+}
+/*Aqui modificamos los cuadritos del contador*/
+.formato{
+    background: #102A42;
+    color: white;
+    font-size: 20px;
+    margin-right: 16px;
+    margin-top: 13px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+.formato h4{
+    font-size: 40px;
+    margin: auto;
+}
+.formato span{
+    font-size: 20px;
+}
