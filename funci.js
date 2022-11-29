@@ -1,3 +1,4 @@
+//Aqui le daremos funciones basicas
 const meses = [
   "Enero",
   "Febrero",
