@@ -22,6 +22,7 @@ const semanas = [
   "Viernes",
   "Sábado",
 ];
+//querySelector: Retorna el primer elemento que cumpla con el criterio dado.
 const Navidad = document.querySelector(".Navidad");
 const contador = document.querySelector(".contador");
 const formato = document.querySelectorAll(".formato h4");
@@ -35,7 +36,7 @@ let tempDia = temporal.getDate();
 
 //Aqui podemos hacer las modificaciones para establecer
 //la fecha en la se culminara la cuenta regresiva
-const fechaFinal = new Date(tempAño, tempMes, tempDia + 30, 0, 0, 0);
+const fechaFinal = new Date(tempAño, tempMes, tempDia + 26, 0, 0, 0);
 
 const año = fechaFinal.getFullYear();
 const horas = fechaFinal.getHours();
@@ -88,4 +89,4 @@ function getRemaindingTime() {
 // cuenta regresiva;
 let contadora = setInterval(getRemaindingTime, 1000);
 //establecer valores iniciales
-getRemaindingTime();
+getRemaindingTime()

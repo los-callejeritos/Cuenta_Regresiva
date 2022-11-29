@@ -1,5 +1,5 @@
 Cuenta_Regresiva
-Descripción: El programa creado tiene la finalidad de proyectar un contador regresivo de tiempo que inicia desde la fecha asiganda del proyecto hasta el 25 de diciembre a horas 00:00 am.
+Descripción: El programa creado tiene la finalidad de proyectar un contador regresivo de tiempo que inicia desde la fecha asiganda del proyecto hasta el 25 de diciembre a horas 00:00 a., señalando la llegada de la navidad.
 Se inició creando una carpeta, con el nombre del programa a trabajar, se realizó los pasos 
 respectivos para luego clonar el repositorio dentro de la misma carpeta
 Prosiguiendo a crear archivos en visual studio Code con los siguientes denomiciones:
