@@ -36,7 +36,7 @@ let tempDia = temporal.getDate();
 
 //Aqui podemos hacer las modificaciones para establecer
 //la fecha en la se culminara la cuenta regresiva
-const fechaFinal = new Date(tempAño, tempMes, tempDia + 26, 0, 0, 0);
+const fechaFinal = new Date(tempAño, tempMes, tempDia + 19, 0, 0, 0);
 
 const año = fechaFinal.getFullYear();
 const horas = fechaFinal.getHours();
@@ -83,7 +83,7 @@ function getRemaindingTime() {
 
   if (t < 0) {
     clearInterval(contadora);
-    contador.innerHTML = `<h4 class="expiró">Felicidades, ya es Navidad</h4>`;
+    contador.innerHTML = `<h4 class="expiró">Feliz Navidad y un prospero Año Nuevo</h4>`;
   }
 }
 // cuenta regresiva;
