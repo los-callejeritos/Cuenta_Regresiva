@@ -30,7 +30,7 @@ Proseguimos a crear archivos en Visual Studio Code con los siguientes denominaci
 En el archivo index, se creo la estructura básica del proyecto, la mayor parte del index esta hecho con la etiqueta DIV los cuales cuentan con una clase especifica que identifique el contenido que abarca dicha sección. Esto se realizo con la finalidad de que, al momento de hacer algunas modificaciones en el CSS o en JS tengamos facilidades.  Se enlazo el html con los otros archivos <link rel="stylesheet" href="estilo.css"> para el CSS y <script src="funci.js"></script> para el JS para su respectivo diseño y su funcionalidad del programa. Se hizo uso de enlaces para las fuentes de letras a usar.
 ## Estilo.css*
 En el archivo CSS, se trabajó las diferentes clases y secciones ya antes enlasadas con el html, dando a cada etiqueta y clase un diseño representativo, como el tamaño de las letras, el color de las fuentes, la separacion de las letras, separacion de los contenedores, modificacion del tamaño de la imagen al igual que su posición y para el contador se dispuso un color y espacio específico.
-## Javascript.js*
+## Funci.js*
 En el archivo JS, se realizó las diferentes programaciones que el trabajo requeria, en este caso, era un contador regresivo estableciendo como fecha límite el 25 de diciembre, correspondiente a la Navidad. Para su desarrollo se hizo uso del metodo DOM al igual que algunas funciones, variables y condiciones.
 Este es el link hacia la visualización del [Countdown] (blank:#http://127.0.0.1:5500/index.html)
 <!-- Bueno con esto hemos concluído con el trabajo. -->
