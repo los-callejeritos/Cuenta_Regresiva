@@ -32,9 +32,5 @@ En el archivo index, se creo la estructura básica del proyecto, la mayor parte 
 En el archivo CSS, se trabajó las diferentes clases y secciones ya antes enlasadas con el html, dando a cada etiqueta y clase un diseño representativo, como el tamaño de las letras, el color de las fuentes, la separacion de las letras, separacion de los contenedores, modificacion del tamaño de la imagen al igual que su posición y para el contador se dispuso un color y espacio específico.
 ## Javascript.js*
 En el archivo JS, se realizó las diferentes programaciones que el trabajo requeria, en este caso, era un contador regresivo estableciendo como fecha límite el 25 de diciembre, correspondiente a la Navidad. Para su desarrollo se hizo uso del metodo DOM al igual que algunas funciones, variables y condiciones.
-### Obstáculos:
-En el caso de Rony se le dificultó muchísimo lograr colocar los diferentes fuentes de letra que el trabajo requería.
-También tuvo dificultad para trabajar con el diseño de los estilos, por su bajo conocimiento en css...
-Ada no tuvo dificultades.
 Este es el link hacia la visualización del [Countdown] (blank:#http://127.0.0.1:5500/index.html)
 <!-- Bueno con esto hemos concluído con el trabajo. -->
